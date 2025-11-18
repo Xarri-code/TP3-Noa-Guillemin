@@ -3,10 +3,12 @@
 
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
 ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body{
 	background-color: white;
 	margin: 0;
+	font-family: "Nunito", sans-serif;;
 }
 
 /* Mise en page (positionnement)
@@ -32,9 +34,14 @@ header{
 }
 
 .liens{
-	list-style: none;
 	text-decoration: none;
-	color: #333;
+	color: white;
+}
+
+nav li{
+	display: inline-block;
+	padding: 10px;
+	font-size: 1.5rem;
 }
 
 .fond-noir{
@@ -54,8 +61,37 @@ footer{
 }
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
+.grid-photos{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
 
+.grid-photos li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.liste-img{
+  padding: 0;
+  list-style-type: none;
+}
+
+.span-2x2{
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.employe-4{
+	grid-column: 4;
+	grid-row: 4;
+}
+
+.employe-5{
+	grid-column: 3;
+	grid-row: 4;
+}
 
 /* Formulaires
 ========================================================================== */
