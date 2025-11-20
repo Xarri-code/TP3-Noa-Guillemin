@@ -23,28 +23,30 @@
     </header>
     <main>
         <section id="connexion">
-            <div class="container">
-                <ul class="liste-img grid-photos">
-                    <li><img src="/img/employe-1.jpg" alt="employe-1"></li>
-                    <li><img src="/img/employe-2.jpg" alt="employe-2"></li>
-                    <li class="span-2x2"><img src="/img/employe-3.jpg" alt="employe-3"></li>
-                    <li class="employe-4"><img src="/img/employe-4.jpg" alt="employe-4"></li>
-                    <li class="employe-5"><img src="/img/employe-5.jpg" alt="employe-5"></li>
-                </ul>
-                <form class="grid-photos" id="connexion" action="/html/employes.html" method="post">
-                    <fieldset>
-                        <div>
+            <div class="container ">
+                <div class="liste-img grid-3-colonnes">
+                    <img src="/img/employe-1.jpg" alt="employe-1">
+                    <img src="/img/employe-2.jpg" alt="employe-2">
+                    <img class="span-2x2" src="/img/employe-3.jpg" alt="employe-3">
+                    <form class="span-2x2" id="connexion" action="html/employes.html" method="post">
+                        <fieldset>
                             <legend><strong>Connexion</strong></legend>
-                            <label for="txt-nom">Votre utilisateur:</label>
-                            <input type="text" id="txt-nom" name="txt-nom" required>
-                        </div>
-                        <div>
-                            <label for="txt-mdp">Mot de passe:</label>
-                            <input type="password" id="txt-mdp" name="txt-mdp" required>
-                        </div>
-                    </fieldset>
-                    <input type="submit" value="Me connecter">
-                </form>
+                            <div class="margin-bas">
+                                <label for="txt-nom">Votre utilisateur</label>
+                                <input type="text" id="txt-nom" name="txt-nom" required>
+                            </div>
+                            <div class="margin-bas">
+                                <label for="txt-mdp">Mot de passe</label>
+                                <input type="password" id="txt-mdp" name="txt-mdp" required>
+                            </div>
+                            <div class="margin-bas">
+                                <input class="btn width-auto" type="submit" value="Me connecter">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <img id="employe-4" src="/img/employe-4.jpg" alt="employe-4">
+                    <img id="employe-5" src="/img/employe-5.jpg" alt="employe-5">
+                </div>
             </div>
         </section>
     </main>

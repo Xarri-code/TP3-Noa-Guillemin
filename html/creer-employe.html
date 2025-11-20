@@ -22,33 +22,36 @@
         </div>
     </header>
     <main>
-        <form id="information" action="https://nrichardgarneau.pythonanywhere.com/" method="get">
-            <fieldset>
-                <legend>Informations personnelles</legend>
+        <div class="container">
+            <form id="information" action="https://nrichardgarneau.pythonanywhere.com/" method="get" class="flex-cote">
+            <fieldset class="larg">
+                <legend class="margin-bas" >Informations personnelles</legend>
                 <label for="txt-prenom">Prénom:</label>
-                <input type="text" id="txt-prenom" name="txt-prenom" required>
+                <input class="margin-bas" type="text" id="txt-prenom" name="txt-prenom" required>
                 <label for="txt-nom">Nom:</label>
-                <input type="text" id="txt-nom" name="txt-nom" required>
+                <input class="margin-bas"  type="text" id="txt-nom" name="txt-nom" required>
                 <label for="tel">Téléphone</label>
-                <input type="text" name="tel" id="tel" placeholder="+418-123-4567" required>
-                <legend>Informations sur le travail</legend>
-                <legend>Quel est le moyen de communication que vous préféré</legend>
+                <input class="margin-bas"  type="text" name="tel" id="tel" placeholder="+418-123-4567" required>
+            </fieldset>
+            <fieldset>
+                <legend class="margin-bas" >Informations sur le travail</legend>
+                <legend class="margin-bas" >Quel est le moyen de communication que vous préféré</legend>
                 <div>
-                    <input type="radio" name="rdo-com" id="tel" value="téléphone" required>
-                    <label for="tel">Téléphone</label>
+                    <input type="radio" name="rdo-com" id="tel" value="téléphone">
+                    <label class="cote-a-cote" for="tel">Téléphone</label>
                 </div>
                 <div>
                     <input type="radio" name="rdo-com" id="texto" value="texto">
-                    <label for="texto">Texto</label>
+                    <label class="cote-a-cote" for="texto">Texto</label>
                 </div>
                 <div>
-                    <input type="radio" name="rdo-com" id="courriel" value="courriel">
-                    <label for="courriel">Courriel</label>
+                    <input class="margin-bas"  type="radio" name="rdo-com" id="courriel" value="courriel">
+                    <label class="cote-a-cote" for="courriel">Courriel</label>
                 </div>
                 <label for="date">Date de votre embauche</label>
-                <input type="date" id="date" name="date" required>
+                <input class="margin-bas" type="date" id="date" name="date" required>
                 <label for="type">Quel est votre type de poste</label>
-                <select name="type" id="type" required>
+                <select class="margin-bas" name="type" id="type" required>
                     <option value="" selected>-Votre choix-</option>
                     <option value="direction">Direction</option>
                     <option value="administration">Administration</option>
@@ -64,12 +67,15 @@
                     <option value="joualier">Joualier</option>
                 </select>
                 <input type="checkbox" id="arret" name="arret">
-                <label for="arret">Êtes-vous en arrêt de travail</label>
+                <label class="cote-a-cote" for="arret">Êtes-vous en arrêt de travail</label>
                 <label for="commentaire">Commentaire</label>
                 <textarea name="commentaire" id="commentaire" maxlength="400"></textarea>
             </fieldset>
-            <input type="submit" value="Soumettre">
         </form>
+        <div class="margin-bas">
+            <input class="btn width-auto" type="submit" value="Soumettre">
+        </div>
+        </div>
     </main>
     <footer>
         <div class="fond-noir">

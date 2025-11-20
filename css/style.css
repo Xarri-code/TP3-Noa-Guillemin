@@ -8,7 +8,8 @@
 body{
 	background-color: white;
 	margin: 0;
-	font-family: "Nunito", sans-serif;;
+	font-family: "Nunito", sans-serif;
+	font-size: 1.3rem;
 }
 
 /* Mise en page (positionnement)
@@ -62,41 +63,79 @@ footer{
 }
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
-.grid-photos{
+.grid-3-colonnes{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 10px;
 }
 
-.grid-photos li{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .liste-img{
-  padding: 0;
-  list-style-type: none;
+  padding: 10px;
 }
 
 .span-2x2{
 	grid-column: span 2;
 	grid-row: span 2;
+	width: 100%;
 }
 
-.employe-4{
-	grid-column: 4;
-	grid-row: 4;
+.btn{
+	background-color: #333;
+	color: #fff;
+	font-size: 1.3rem;
+}
+.btn:hover{
+	background-color: black;
 }
 
-.employe-5{
-	grid-column: 3;
-	grid-row: 4;
+.flex-cote{
+	display: flex;
+	justify-content: space-between;
 }
 
+.cote-a-cote{
+	display: inline;
+}
+
+.width-auto{
+	width: auto;
+}
+
+.larg{
+	width: 45%;
+}
 /* Formulaires
 ========================================================================== */
 
+.margin-bas{
+	margin-bottom: 30px;
+}
+
+
+label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+input{
+	background-color: #D3D3D3;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+
+form{
+	background-color: #A9A9A9;
+	padding: 10px;
+	margin: 5px;
+	border: #333 solid 1px;
+}
+
+fieldset{
+	border: none;
+	padding: 30px;
+}
 
 
 /* Règles spécifiques aux pages
